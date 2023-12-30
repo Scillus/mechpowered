@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minok.mechpowered.block.MechBlocks;
 import net.minok.mechpowered.item.MechItems;
 import org.slf4j.Logger;
 
@@ -28,6 +29,7 @@ public class MechPowered
 
         // Register the commonSetup method for modloading
         MechItems.register(modEventBus);
+        MechBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
 
 

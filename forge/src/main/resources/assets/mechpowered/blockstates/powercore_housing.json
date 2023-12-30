@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mechpowered:block/powercore_housing"
+    }
+  }
+}
